@@ -1,16 +1,13 @@
 # Course structure
 
 
-**part 1 - video on course structure**
+**Video on course structure**
 
 
 <a href="https://www.youtube.com/watch?v=YZxZt7plGyI" target="_blank">
   <img src="https://github.com/kokchun/assets/blob/main/python_videos/course_structure.png?raw=true" alt="course structure" width="600">
 </a>
 
-**part 2 - navigating github repository**
-
-TODO: video
 <!-- 
 <a href="https://youtu.be/woVKB99-KFg" target="_blank">
   <img src="https://github.com/kokchun/assets/blob/main/sql/01_course_structure_2.png?raw=true" alt="dbeaver navigation" width="600">
