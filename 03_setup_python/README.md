@@ -1,6 +1,17 @@
 # Setup Python
 In this section, we will go through steps to set up python and related tools in your local machine. The target is to use Visual Studio Code as the code editor to work on jupyter notebooks under a virutal environment. The demo below is using windows OS, but there are additional notes for differences in mac OS. 
 
+## Video 
+**Installing python on windows part 1** </br>
+<a href="https://youtu.be/dteU94PSNoQ" target="_blank">
+  <img src="https://github.com/kokchun/assets/blob/main/python_videos/setup_part1.png?raw=true" alt="python setup part 1" width="600">
+</a>
+
+**Installing python on windows part 2**</br>
+<a href="https://youtu.be/Lkr6yRUCHbA" target="_blank">
+  <img src="https://github.com/kokchun/assets/blob/main/python_videos/setup_part2.png?raw=true" alt="python setup part 1" width="600">
+</a>
+
 ## Instructions
 
 ### 1. Install Python
