@@ -1,0 +1,51 @@
+
+[0m09:33:53.284167 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:33:53.934267 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on database 'JOB_ADS'
+[0m09:33:53.934836 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m09:33:53.935193 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m09:33:53.935611 [debug] [ThreadPool]: On create_job_ads_warehouse_warehouse: Close
+[0m09:33:54.072516 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_job_ads_warehouse_warehouse, now create_job_ads_warehouse_marts)
+[0m09:33:54.073564 [debug] [ThreadPool]: Creating schema "database: "job_ads"
+schema: "warehouse_marts"
+"
+[0m09:33:54.077179 [debug] [ThreadPool]: Using snowflake connection "create_job_ads_warehouse_marts"
+[0m09:33:54.077668 [debug] [ThreadPool]: On create_job_ads_warehouse_marts: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_code", "target_name": "dev", "connection_name": "create_job_ads_warehouse_marts"} */
+create schema if not exists job_ads.warehouse_marts
+[0m09:33:54.077993 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:33:54.755169 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 003001 (42501): SQL access control error:
+Insufficient privileges to operate on database 'JOB_ADS'
+[0m09:33:54.756174 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro create_schema
+[0m09:33:54.756934 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m09:33:54.757711 [debug] [ThreadPool]: On create_job_ads_warehouse_marts: Close
+[0m09:33:54.905207 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:33:54.906029 [debug] [MainThread]: Connection 'create_job_ads_warehouse_marts' was properly closed.
+[0m09:33:54.906634 [info ] [MainThread]: 
+[0m09:33:54.907290 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 4.63 seconds (4.63s).
+[0m09:33:54.908251 [error] [MainThread]: Encountered an error: Database Error 003001 (42501): SQL access control error: Insufficient privileges to operate on database 'JOB_ADS'
+[0m09:33:54.911736 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 5.0871825, "process_user_time": 1.130303, "process_kernel_time": 0.135963, "process_mem_max_rss": "181108736", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m09:33:54.912484 [debug] [MainThread]: Command `dbt run` failed at 09:33:54.912381 after 5.09 seconds
+[0m09:33:54.913023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043605d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104300610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083235d0>]}
+[0m09:33:54.914076 [debug] [MainThread]: Flushing usage events
+[0m09:38:00.779873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046d1d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10473dd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10473e7d0>]}
+
+
+============================== 09:38:00.781389 | 14c50526-2f7b-41d9-903a-5573637118ed ==============================
+[0m09:38:00.781389 [info ] [MainThread]: Running with dbt=1.8.4
+[0m09:38:01.052263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '14c50526-2f7b-41d9-903a-5573637118ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10473d7d0>]}
+[0m09:38:01.078641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '14c50526-2f7b-41d9-903a-5573637118ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1033fdd10>]}
+[0m09:38:01.078977 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m09:38:01.088552 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m09:38:01.140007 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:38:01.140213 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:38:01.157186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '14c50526-2f7b-41d9-903a-5573637118ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087bb3d0>]}
+[0m09:38:01.197978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '14c50526-2f7b-41d9-903a-5573637118ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108881990>]}
+[0m09:38:01.198188 [info ] [MainThread]: Found 7 models, 2 analyses, 1 source, 563 macros
+[0m09:38:01.198334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '14c50526-2f7b-41d9-903a-5573637118ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108688c50>]}
+[0m09:38:01.199095 [info ] [MainThread]: 
+[0m09:38:01.199329 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m09:38:01.200998 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_job_ads'
+[0m09:38:01.207631 [debug] [ThreadPool]: Using snowflake connection "list_job_ads"
+[0m09:38:01.207882 [debug] [ThreadPool]: On list_job_ads: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "dbt_code", "target_name": "dev", "connection_name": "list_job_ads"} */
+show terse schemas in database job_ads
+    limit 10000
