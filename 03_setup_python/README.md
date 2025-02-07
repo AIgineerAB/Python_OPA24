@@ -12,6 +12,7 @@ In this section, we will go through steps to set up python and related tools in 
   <img src="https://github.com/kokchun/assets/blob/main/python_videos/setup_part2.png?raw=true" alt="python setup part 1" width="600">
 </a>
 
+
 ## Instructions
 
 ### 1. Install Python
@@ -42,10 +43,26 @@ Now you can create a folder for your project under *Documents*. You can now navi
 
 ### 3. Create virtual environment
 
-You will be using uv virtual environment to manage dependencies in a project. You need to first install uv globally with command prompt: 
+> [!NOTE]                                                                      
+> A virtual environment is an isolated environment for a specific project. Being isolated means that you can install different python libraries for each project. Furthermore, you can install different versions of the same library for different project </br>
+>
+> There are different ways to create virtual envrionment. In this course, we will be using *uv virtual environment*
+> 
+> For instance, if you have created two projects, *My first python project* and *My second python project*, you can create two virtual environments for them. This is to avoid conflicts between libraries necessary for different projects </br>
+> 
+> When you ```pip install [xxx]```, you are installing the library globally. A project without a virtual environment will then use the globally installed libraries </br>
+>
+> When you create a virtual environment for a project, and then ```uv pip install [xxx]```. The project will use the libraries installed in this virtual environment 
+
+
+Here comes instructions for creating a virtual environment. You will be using uv virtual environment to manage dependencies in a project. You need to first install uv globally with command prompt: 
 <img src="https://github.com/kokchun/assets/blob/main/install_python/installuv.png?raw=true" alt="dbeaver navigation">
 
 Now you can open your project in VS Code. In the terminal of VS code, use ```uv venv``` to create an uv virutal environment for your project. You can then activate it and install *ipykernel* in the venv. 
+
+> [!NOTE]
+> A *.venv* folder is now created under your project directory. But you still need to activate this virtural environment before installing libraries into it.      
+
 <img src="https://github.com/kokchun/assets/blob/main/install_python/venv.png?raw=true" alt="dbeaver navigation">
 
 If you encounter an error of *uv not found* in this step, make sure that you have the python scripts directory in the environment variable in your machine: 
@@ -54,6 +71,15 @@ If you encounter an error of *uv not found* in this step, make sure that you hav
 <img src="https://github.com/kokchun/assets/blob/main/install_python/python_paths.png?raw=true" alt="dbeaver navigation">
 
 With *ipykernel*, you will be able to run jupyter notebooks: 
+> [!NOTE]
+> The primary file types used to write python codes are ```.py``` and ```.ipynb``` </br>
+> 
+> ```.py```is the standard file type for python scripts. It can be executed directly from command line as below and imported by other python scripts
+> ``` console
+> python main.py
+>```
+> ```.ipynb``` is an jupyter notebook file. It stands for interative python notebook. It is widely used for documentation and exploratory analysis. Because it combines code, text and visualization nicely in a single file. So that we can see the outputs of different code blocks to better understanding of the entire script
+
 <img src="https://github.com/kokchun/assets/blob/main/install_python/test.png?raw=true" alt="dbeaver navigation">
 
 
