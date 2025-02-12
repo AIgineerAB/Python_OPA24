@@ -6,7 +6,6 @@
 
 
 ## Read more
-- [Python style summary](https://realpython.com/python-pep8/)
- - [Python style official guide](https://peps.python.org/pep-0008/#naming-conventions)
+
 
 ## Other videos
