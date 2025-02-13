@@ -9,7 +9,7 @@ Although the course is a fundamental course, a large amount of concepts are cove
 | -------- | --------------------------------------------------------- | ------------ | ------------ |
 | 1        | fundamnentals, I/O, data structures, data types, ...      | 00-04        | ex 1         |
 | 2        | functions, matplotlib, error handling, file handling, oop | 05-06        | ex 1, lab 1  |
-| 3        | pandas, series, dataframe, missing data                   | 07-08        | ex 2, lab 1  |
+| 3        | pandas, series, dataframe                                 | 07-08        | ex 2, lab 1  |
 | 4        | missing data                                              | 09           | ex 2, lab 2  |
-| 5        | plotly_express, kp                                        | 10-11        | ex 2, lab 2  |
+| 5        | plotly_express, kpi                                       | 10-11        | ex 2, lab 2  |
 | 6        | data storytelling                                         | 12           | ex 2, lab 2  |
