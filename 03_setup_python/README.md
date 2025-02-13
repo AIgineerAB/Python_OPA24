@@ -71,6 +71,13 @@ If you encounter an error of *uv not found* in this step, make sure that you hav
 <img src="https://github.com/kokchun/assets/blob/main/install_python/python_paths.png?raw=true" alt="dbeaver navigation">
 
 With *ipykernel*, you will be able to run jupyter notebooks: 
+
+> [!NOTE]
+> Alternatively, you can create a file called requirements.txt in your project directory, and list the libraries or libraries with their specific versions in the file. Then you can use the syntax below to install dependencies in your virtual environment all at once.
+>  ``` console
+> uv pip install -r requirements.txt
+>```
+
 > [!NOTE]
 > The primary file types used to write python codes are ```.py``` and ```.ipynb``` </br>
 > 
