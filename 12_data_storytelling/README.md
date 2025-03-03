@@ -1,5 +1,11 @@
 # Data storytelling
 
+**part 1 - slides**
+
+<a href="https://youtu.be/3brJ9j5B_A8" target="_blank">
+  <img src="https://github.com/kokchun/assets/blob/main/python_videos/data_storytelling.png?raw=true" alt="data storytelling" width="600">
+</a> 
+
 ## Install
 ```py
 uv pip install lxml
